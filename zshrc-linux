@@ -125,7 +125,7 @@ source $ZSH/oh-my-zsh.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-screenfetch
+
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 # jenv enable-plugin export
@@ -139,6 +139,10 @@ command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 export PATH=~/bin:$PATH
+
+screenfetch
+
+#SPACESHIP_PROMPT_ASYNC=false
 
 # dir colors change default
 eval "$(dircolors ~/.dircolors)"
